@@ -39,7 +39,7 @@ jobs:
       - name: FTP Deploy to WP Engine (Production)
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          ftp-server: ftp://ftp.lz1haa.eu:21/
-          ftp-username: webuploadingneuqzvimiat@lz1haa.eu
+          ftp-server: ${{ secrets.PROD_FTP_HOST }}
+          ftp-username: ${{ secrets.PROD_FTP_USER }}
           ftp-password: ${{ secrets.PROD_FTP_PASSWORD }}
           local-dir: ./releases/2.0.0/assets
