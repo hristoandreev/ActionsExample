@@ -27,14 +27,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Install Composer Dependencies
-        run: composer install --prefer-dist --no-progress
+      #- name: Install Composer Dependencies
+      #  run: composer install --prefer-dist --no-progress
 
-      - name: npm install
-        run: npm install
+      #- name: npm install
+      #  run: npm install
 
-      - name: npm run bundle
-        run: npm run bundle
+      #- name: npm run bundle
+      #  run: npm run bundle
 
       - name: FTP Deploy to WP Engine (Production)
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
