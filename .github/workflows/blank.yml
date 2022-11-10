@@ -42,4 +42,4 @@ jobs:
           ftp-server: sftp://ftp.lz1haa.eu:21/
           ftp-username: webuploadingneuqzvimiat@lz1haa.eu
           ftp-password: ${{ secrets.PROD_FTP_PASSWORD }}
-          local-dir: ./our-awesome-theme/
+          local-dir: ./
