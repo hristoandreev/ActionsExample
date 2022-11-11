@@ -45,7 +45,7 @@ jobs:
       - run: pwd && ls -la
 
       - name: FTP Deploy to WP Engine (Production)
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           ftp-server: ${{ secrets.PROD_FTP_HOST }}
           protocol: ftps
