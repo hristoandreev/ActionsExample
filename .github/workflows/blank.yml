@@ -49,7 +49,7 @@ jobs:
         with:
           server: ${{ secrets.PROD_FTP_HOST }}
           protocol: ftps
-          security: strict
+          security: loose
           username: ${{ secrets.PROD_FTP_USER }}
           password: ${{ secrets.PROD_FTP_PASSWORD }}
           local-dir: ./
