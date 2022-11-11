@@ -35,6 +35,12 @@ jobs:
 
       #- name: npm run bundle
       #  run: npm run bundle
+      
+      - name: Download release asset
+        uses: robinraju/release-downloader@v1.6
+        with:
+          latest: true
+          fileName: "WOLF-RA8875_GT911.bin"
 
       - name: FTP Deploy to WP Engine (Production)
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
