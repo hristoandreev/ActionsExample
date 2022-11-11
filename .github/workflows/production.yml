@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: 🚀 Deploy release binary to firmare update server
+name: 🚀 HTTP Deploy release binary to firmare update server
 
 # Controls when the workflow will run
 on:
@@ -51,4 +51,4 @@ jobs:
           headers: '{"x-api-key": "123456"}'
           data: '{"fileType": "stm", "fileVersion": "99.99.99"}'
           name: 'uploadedFile'
-          file: 'WOLF-RA8875_GT911.bin'
+          file: './WOLF-RA8875_GT911.bin'
