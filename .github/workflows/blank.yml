@@ -40,6 +40,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
           ftp-server: ${{ secrets.PROD_FTP_HOST }}
+          protocol: ftps
+          security: strict
           ftp-username: ${{ secrets.PROD_FTP_USER }}
           ftp-password: ${{ secrets.PROD_FTP_PASSWORD }}
-          local-dir: ./releases/2.0.0/assets
+          local-dir: ./
