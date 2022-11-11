@@ -47,9 +47,9 @@ jobs:
       - name: FTP Deploy to WP Engine (Production)
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          ftp-server: ${{ secrets.PROD_FTP_HOST }}
+          server: ${{ secrets.PROD_FTP_HOST }}
           protocol: ftps
           security: strict
-          ftp-username: ${{ secrets.PROD_FTP_USER }}
-          ftp-password: ${{ secrets.PROD_FTP_PASSWORD }}
+          username: ${{ secrets.PROD_FTP_USER }}
+          password: ${{ secrets.PROD_FTP_PASSWORD }}
           local-dir: ./
